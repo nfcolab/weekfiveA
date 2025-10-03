@@ -495,27 +495,6 @@ big_ui = ui(1920, 1280)
 big_ui.add_element("e1", 10*m,30*m,30*m,20*m, color ="red")
 big_ui.add_element("a2", 10*m,60*m,30*m,20*m, color ="red")
 big_ui.add_element("a3", 10*m,90*m,30*m,20*m, color ="red")
-big_ui.add_element("a4", 10*m,120*m,30*m,20*m, color ="red")
-
-big_ui.add_element("b1", 80*m,30*m,30*m,20*m, color ="green")
-big_ui.add_element("b2", 80*m,60*m,30*m,20*m, color ="green")
-big_ui.add_element("b3", 80*m,90*m,30*m,20*m, color ="green")
-big_ui.add_element("b4", 80*m,120*m,30*m,20*m, color ="green")
-
-big_ui.add_element("e2", 150*m,30*m,30*m,20*m, color ="blue")
-big_ui.add_element("c2", 150*m,60*m,30*m,20*m, color ="blue")
-big_ui.add_element("c3", 150*m,90*m,30*m,20*m, color ="blue")
-big_ui.add_element("c4", 150*m,120*m,30*m,20*m, color ="blue")
-
-big_ui.add_element("d1", 230*m,30*m,30*m,20*m, color ="grey")
-big_ui.add_element("d2", 230*m,60*m,30*m,20*m, color ="grey")
-big_ui.add_element("d3", 230*m,90*m,30*m,20*m, color ="grey")
-big_ui.add_element("d4", 230*m,120*m,30*m,20*m, color ="black")
-
-big_ui.add_element("t1", 130*m,0*m,30*m,20*m, color ="yellow")
-big_ui.add_element("t2", 170*m,0*m,30*m,20*m, color ="yellow")
-big_ui.add_element("t3", 210*m,0*m,30*m,20*m, color ="yellow")
-big_ui.add_element("e3", 250*m,0*m,30*m,20*m, color ="yellow")
 
 #big_ui.learn_element_pos("a4", "expert")
 # big_ui.learn_all_elements("expert")
