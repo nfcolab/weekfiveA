@@ -394,7 +394,11 @@ test_ui = ui()
 test_ui.add_element("logo", 10, 10, 10, 10, color = "grey")
 test_ui.add_element("logo2", 20, 20, 10, 10, color = "yellow")
 test_ui.add_element("search", 100, 10, 100, 10, color = "blue")
-test_ui.add_element("button", 50, 300, 25, 20, color = "green")
+test_ui.add_element("button", 500, 300, 25, 20, color = "green")
+test_ui.add_element("search", 1000, 1000, 100, 100, color = "blue")
+test_ui.add_element("e1", 50, 300, 25, 20, color = "green")
+test_ui.add_element("e2", 60, 700, 25, 20, color = "green")
+
 
 test_ui.fitts_movement_time(["logo","search","button"])
 
@@ -423,7 +427,7 @@ def visualise_UI(ui, path = [], show_text = True, show_fixation = False, scanpat
         if show_text:
             plt.text(e.x, e.y, e.name)
             if e.data:
-                plt.text(e.x, e.y+20, str(e.data))
+                plt.text(e.x, e.y+100, str(e.data))
 
     for p in range(len(path)-1):
         if isinstance(path[p], str):
@@ -495,6 +499,27 @@ big_ui = ui(1920, 1280)
 big_ui.add_element("e1", 10*m,30*m,30*m,20*m, color ="red")
 big_ui.add_element("a2", 10*m,60*m,30*m,20*m, color ="red")
 big_ui.add_element("a3", 10*m,90*m,30*m,20*m, color ="red")
+big_ui.add_element("a4", 10*m,120*m,30*m,20*m, color ="red")
+
+big_ui.add_element("b1", 80*m,30*m,30*m,20*m, color ="green")
+big_ui.add_element("b2", 80*m,60*m,30*m,20*m, color ="green")
+big_ui.add_element("b3", 80*m,90*m,30*m,20*m, color ="green")
+big_ui.add_element("b4", 80*m,120*m,30*m,20*m, color ="green")
+
+big_ui.add_element("e2", 150*m,30*m,30*m,20*m, color ="blue")
+big_ui.add_element("c2", 150*m,60*m,30*m,20*m, color ="blue")
+big_ui.add_element("c3", 150*m,90*m,30*m,20*m, color ="blue")
+big_ui.add_element("c4", 150*m,120*m,30*m,20*m, color ="blue")
+
+big_ui.add_element("d1", 230*m,30*m,30*m,20*m, color ="grey")
+big_ui.add_element("d2", 230*m,60*m,30*m,20*m, color ="grey")
+big_ui.add_element("d3", 230*m,90*m,30*m,20*m, color ="grey")
+big_ui.add_element("d4", 230*m,120*m,30*m,20*m, color ="black")
+
+big_ui.add_element("t1", 130*m,0*m,30*m,20*m, color ="yellow")
+big_ui.add_element("t2", 170*m,0*m,30*m,20*m, color ="yellow")
+big_ui.add_element("t3", 210*m,0*m,30*m,20*m, color ="yellow")
+big_ui.add_element("e3", 250*m,0*m,30*m,20*m, color ="yellow")
 
 #big_ui.learn_element_pos("a4", "expert")
 # big_ui.learn_all_elements("expert")
